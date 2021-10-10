@@ -20,7 +20,7 @@ while (cap.isOpened()):
         for hand_in_frame in results.multi_hand_landmarks: # looping through hands exists in the Frame 
             mpDraw.draw_landmarks(img,hand_in_frame, mpHands.HAND_CONNECTIONS) # drawing Hand Connections   
 
-    cv2.imshow("Hand Tracking - Code Terra", img) # showing Video 
+    cv2.imshow("Hand Tracking", img) # showing Video 
 
     if cv2.waitKey(1) == 113: # 113 - Q : press on Q : Close Video 
         break
